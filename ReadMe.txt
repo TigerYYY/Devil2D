@@ -1,4 +1,7 @@
 
+git commit -a -m "ReadMe.txt 1"
+git push 
+
 Введите кол-во точек (N): 10
 Кол-во классов (K): 3
 
