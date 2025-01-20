@@ -43,3 +43,30 @@ print()
 
 print( X[:, 0] )
 print( X[:, 1] )
+
+# Отрисовочная магия
+from matplotlib.colors import ListedColormap
+
+cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])
+
+print( cmap_light )
+
+x_min, x_max = (-1, 1)
+y_min, y_max = (-1, 1)
+
+h = 0.05
+
+#
+print( "Вот как выглядит наш датасет. Три цвета обозначают три различных класса." )
+
+plt.figure(figsize=(12, 12))
+
+plt.scatter(X[:, 0], X[:, 1], c=y)
+
+plt.xlim((x_min, x_max))
+plt.ylim((y_min, y_max))
+
+plt.grid(True)
+
+plt.show()
+
